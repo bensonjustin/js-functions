@@ -27,6 +27,8 @@ console.log(testGreeting); // printing the output value of the function.
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
 
+var bango1 = 1;
+var bango2 = 2;
 
 
 /*
@@ -44,7 +46,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `sum` to test your code.
 */
 
-
+function add(num1, num2){
+    return num1 + num2;
+}
+var sum = add(bango1, bango2);
+console.log(sum);
 
 /*
  * #3
@@ -60,7 +66,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `difference` to test your code.
 */ 
 
-
+function subtract(num1, num2){
+    return num1 - num2;
+}
+var difference = subtract(bango1, bango2);
+console.log(difference);
 
 /*
  * #4
@@ -76,7 +86,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `product` to test your code.
 */
 
-
+function multiply(num1, num2){
+    return num1 * num2;
+}
+var product = multiply(bango1, bango2);
+console.log(product);
 
 /*
  * #5
@@ -92,7 +106,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `quotient` to test your code.
 */
 
-
+function divide(num1, num2){
+    return num1 / num2;
+}
+var quotient = divide(bango1, bango2);
+console.log(quotient);
 
 /*
  * #6
@@ -106,7 +124,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
 */
 
-
+function checkSum(x){
+    return 'Mariah Carey has been married ' + x + ' times.';
+}
+var daDiva = checkSum(bango2);
+console.log(daDiva);
 
 /*
  * #7
@@ -120,7 +142,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your results.
 */ 
 
-
+function checkDifference(x){
+    return 'Last night I dreamt that I ate ' + x + ' Taco Bell soft tacos.';
+}
+var difference = checkDifference(bango2);
+console.log(difference);
 
 /*
  * #8
@@ -133,7 +159,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.  
 */
 
-
+function checkProduct(){
+    return sum * product;
+}
+var answer = checkProduct();
+console.log(answer);
 
 /*
  * #9
@@ -145,6 +175,12 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will multiply the values stored in the product and quotient variables.
  * Console.log your result.  
 */
+
+function checkQuotient(){
+    return product * quotient;
+}
+var answer2 = checkQuotient();
+console.log(answer2);
 
 /*
  * Declare three variables
@@ -166,7 +202,15 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
 */ 
 
+var bango3 = 3;
+var bango4 = 4;
+var bango5 = 5;
 
+function addThenSubtract(num1, num2, num3){
+    return subtract(add(num1, num2),num3);
+}
+var result3 = addThenSubtract(bango1, bango2, bango3); 
+console.log(result3);
 
 /*
  * #11
@@ -182,7 +226,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
 */ 
 
-
+function multiplyThenDivide(num1, num2, num3){
+    return divide(multiply(num1, num2),num3);
+}
+var result4 = multiplyThenDivide(bango1, bango2, bango3);
+console.log(result4);
 
 /*
  * #12
@@ -196,7 +244,11 @@ console.log(testGreeting); // printing the output value of the function.
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
 
-
+function createFullName(firstName, lastName){
+    return firstName + ' ' + lastName;
+}
+var myFullName = createFullName('Justin', 'Benson');
+console.log(myFullName);
 
 /*
  * #13 
@@ -212,7 +264,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result.
  */
 
-
+function eatFood(firstName, lastName, food){
+    return createFullName(firstName, lastName) + ' eats ' + food + ' everyday for breakfast.';
+}
+var result5 = eatFood('Justin', 'Benson', 'Won Ton Soup');
+console.log(result5);
 
 /************** ENGAGE HYPERDRIVE **************/
 /* No more training wheels! For the exercises #14-18, use the experience you've
@@ -227,7 +283,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log your result. 
 */
 
-
+function shoeSize(inches){
+    return inches * 2.54;
+}
+var result6 = shoeSize(12);
+console.log(result6);
 
 /*
  * #15
@@ -239,7 +299,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
  
-
+function allCaps(str){
+    return 
+}
+var result7 = allCaps("believe you can and you're halfway there.");
+console.log();
 
 /*
  * #16
